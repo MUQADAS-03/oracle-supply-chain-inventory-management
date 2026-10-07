@@ -24,6 +24,8 @@ This project models that entire flow inside a single Oracle schema (`HRDB`), spl
 
 12 tables, fully normalized with foreign keys:
 
+![HRDB schema: entity relationship diagram of the 12 tables](docs/schema_diagram.png)
+
 | Table | Purpose |
 |---|---|
 | `CATEGORY` | Product classification |
@@ -109,6 +111,8 @@ The build was done in 12 incremental phases, each in its own script:
 ├── phase9_cursor.sql              -- Cursors + auto-reorder procedure
 ├── phase10_views.sql              -- Reporting views
 ├── phase11_joins.sql              -- Complex joins & analytics queries
+├── docs/
+│   └── schema_diagram.png         -- Entity relationship diagram of the 12 tables
 └── README.md
 ```
 
